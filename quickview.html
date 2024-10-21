@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <title>Swiper Example</title>
+  <style>
+    /* Main container holding swiper and divs on both sides */
+    .main-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 10px; /* Adjust as needed */
+    }
+
+    .side-div {
+      width: 30px; /* Width of the left and right side divs */
+      height: 100px;
+      background-color: lightgray;
+    }
+
+    .swiper-container {
+      width: 80%; /* Adjust the size relative to the parent */
+      padding: 20px;
+      box-sizing: border-box;
+      position: relative; /* Important for button positioning */
+      overflow: hidden; /* Prevent scrollbar */
+    }
+  
+    .swiper-wrapper {
+      display: flex;
+      align-items: center;
+    }
+  
+    .swiper-slide {
+      width: 75px;  
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image-container {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .image-container img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  
+    .part-name {
+      color: black !important;
+      margin-top: 10px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    /* Remove underline from links */
+    a {
+      text-decoration: none;
+    }
+
+    /* Navigation buttons */
+    .swiper-button-next,
+    .swiper-button-prev {
+      z-index: 10;
+      border: none;
+      padding: 10px;
+      color: #333;
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 16px;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    .swiper-button-prev {
+      left: 15px;
+    }
+
+    .swiper-button-next {
+      right: 15px;
+    }
+
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .swiper-button-next:active,
+    .swiper-button-prev:active {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <!-- Left side div -->
+    <div class="side-div"></div>
+
+    <!-- Swiper container -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <!-- Slide 1: Brake Rotor -->
+        <div class="swiper-slide">
+            <a href="">
+              <div class="image-container">
+                <img src="https://ds31kih3xf8eg.cloudfront.net/variants/HobjBFyb3Sx3ijdMt88rcK6k/4aed37fcc100f790c678f8cec7ca67943f00985660416438ba69b43eec774d28?format=webp" alt="Brake Rotor" />
+              </div>
+              <p class="part-name">Brake Rotor</p>
+            </a>
+          </div>
+          <!-- Slide 2: Headlight -->
+          <div class="swiper-slide">
+            <a href="">
+              <div class="image-container">
+                <img src="https://ds31kih3xf8eg.cloudfront.net/variants/GUxsSukqie8fh8wQCh3Ercvx/4aed37fcc100f790c678f8cec7ca67943f00985660416438ba69b43eec774d28?format=webp" alt="Headlight" />
+              </div>
+              <p class="part-name">Headlight</p>
+            </a>
+          </div>
+          <!-- Slide 3: Quick Strut -->
+          <div class="swiper-slide">
+            <a href="">
+              <div class="image-container">
+                <img src="https://ds31kih3xf8eg.cloudfront.net/variants/YEhPSwxTLtXYTGMCZYAzpAjG/4aed37fcc100f790c678f8cec7ca67943f00985660416438ba69b43eec774d28?format=webp" alt="Quick Strut" />
+              </div>
+              <p class="part-name">Quick Strut</p>
+            </a>
+          </div>
+          <!-- Slide 4: CV Axle -->
+          <div class="swiper-slide">
+            <a href="">
+              <div class="image-container">
+                <img src="https://ds31kih3xf8eg.cloudfront.net/variants/mysA2koVenmbxtFGbyzUSN8i/4aed37fcc100f790c678f8cec7ca67943f00985660416438ba69b43eec774d28?format=webp" alt="CV Axle" />
+              </div>
+              <p class="part-name">CV Axle</p>
+            </a>
+          </div>
+          <!-- Slide 5: Mirror -->
+          <div class="swiper-slide">
+            <a href="">
+              <div class="image-container">
+                <img src="https://ds31kih3xf8eg.cloudfront.net/variants/DMGA31oK6Ezf2jT8EwEvvEs8/4aed37fcc100f790c678f8cec7ca67943f00985660416438ba69b43eec774d28?format=webp" alt="Mirror" />
+              </div>
+              <p class="part-name">Mirror</p>
+            </a>
+          </div>
+          <!-- Slide 6: Wiper -->
+          <div class="swiper-slide">
+            <a href="">
+              <div class="image-container">
+                <img src="https://ds31kih3xf8eg.cloudfront.net/variants/zHoArjxajp92SXvDT3XFDwJe/4aed37fcc100f790c678f8cec7ca67943f00985660416438ba69b43eec774d28?format=webp" alt="Wiper" />
+              </div>
+              <p class="part-name">Wiper</p>
+            </a>
+          </div>
+          <!-- Slide 7: Motor Oil -->
+          <div class="swiper-slide">
+            <a href="">
+              <div class="image-container">
+                <img src="https://ds31kih3xf8eg.cloudfront.net/variants/yTXD2dmWz1VJ58rghsSrYEbB/4aed37fcc100f790c678f8cec7ca67943f00985660416438ba69b43eec774d28?format=webp" alt="Motor Oil" />
+              </div>
+              <p class="part-name">Motor Oil</p>
+            </a>
+          </div>
+          <!-- Slide 8: Brake Pads -->
+          <div class="swiper-slide">
+            <a href="">
+              <div class="image-container">
+                <img src="https://ds31kih3xf8eg.cloudfront.net/variants/Er89xEBK5a4ALvPj9BmauEuD/4aed37fcc100f790c678f8cec7ca67943f00985660416438ba69b43eec774d28?format=webp" alt="Brake Pads" />
+              </div>
+              <p class="part-name">Brake Pads</p>
+            </a>
+          </div>
+          <!-- Slide 9: Wheel Hub -->
+          <div class="swiper-slide">
+            <a href="">
+              <div class="image-container">
+                <img src="https://ds31kih3xf8eg.cloudfront.net/variants/QwJnzBZxorJj7m8cNHpZTasV/4aed37fcc100f790c678f8cec7ca67943f00985660416438ba69b43eec774d28?format=webp" alt="Wheel Hub" />
+              </div>
+              <p class="part-name">Wheel Hub</p>
+            </a>
+          </div>
+          <!-- Slide 10: Coil Spring -->
+          <div class="swiper-slide">
+            <a href="">
+              <div class="image-container">
+                <img src="https://ds31kih3xf8eg.cloudfront.net/variants/3am7R1VmtjFhK6QvyPsbVqYY/4aed37fcc100f790c678f8cec7ca67943f00985660416438ba69b43eec774d28?format=webp" alt="Coil Spring" />
+              </div>
+              <p class="part-name">Coil Spring</p>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <div class="image-container">
+                <img src="https://ds31kih3xf8eg.cloudfront.net/variants/HobjBFyb3Sx3ijdMt88rcK6k/4aed37fcc100f790c678f8cec7ca67943f00985660416438ba69b43eec774d28?format=webp" alt="Brake Rotor" />
+              </div>
+              <p class="part-name">Brake Rotor</p>
+            </a>
+          </div>
+          <!-- Slide 2: Headlight -->
+          <div class="swiper-slide">
+            <a href="">
+              <div class="image-container">
+                <img src="https://ds31kih3xf8eg.cloudfront.net/variants/GUxsSukqie8fh8wQCh3Ercvx/4aed37fcc100f790c678f8cec7ca67943f00985660416438ba69b43eec774d28?format=webp" alt="Headlight" />
+              </div>
+              <p class="part-name">Headlight</p>
+            </a>
+          </div>
+          <!-- Slide 3: Quick Strut -->
+          <div class="swiper-slide">
+            <a href="">
+              <div class="image-container">
+                <img src="https://ds31kih3xf8eg.cloudfront.net/variants/YEhPSwxTLtXYTGMCZYAzpAjG/4aed37fcc100f790c678f8cec7ca67943f00985660416438ba69b43eec774d28?format=webp" alt="Quick Strut" />
+              </div>
+              <p class="part-name">Quick Strut</p>
+            </a>
+          </div>
+          <!-- Slide 4: CV Axle -->
+          <div class="swiper-slide">
+            <a href="">
+              <div class="image-container">
+                <img src="https://ds31kih3xf8eg.cloudfront.net/variants/mysA2koVenmbxtFGbyzUSN8i/4aed37fcc100f790c678f8cec7ca67943f00985660416438ba69b43eec774d28?format=webp" alt="CV Axle" />
+              </div>
+              <p class="part-name">CV Axle</p>
+            </a>
+          </div>
+          <!-- Slide 5: Mirror -->
+          <div class="swiper-slide">
+            <a href="">
+              <div class="image-container">
+                <img src="https://ds31kih3xf8eg.cloudfront.net/variants/DMGA31oK6Ezf2jT8EwEvvEs8/4aed37fcc100f790c678f8cec7ca67943f00985660416438ba69b43eec774d28?format=webp" alt="Mirror" />
+              </div>
+              <p class="part-name">Mirror</p>
+            </a>
+          </div>
+          <!-- Slide 6: Wiper -->
+          <div class="swiper-slide">
+            <a href="">
+              <div class="image-container">
+                <img src="https://ds31kih3xf8eg.cloudfront.net/variants/zHoArjxajp92SXvDT3XFDwJe/4aed37fcc100f790c678f8cec7ca67943f00985660416438ba69b43eec774d28?format=webp" alt="Wiper" />
+              </div>
+              <p class="part-name">Wiper</p>
+            </a>
+          </div>
+          <!-- Slide 7: Motor Oil -->
+          <div class="swiper-slide">
+            <a href="">
+              <div class="image-container">
+                <img src="https://ds31kih3xf8eg.cloudfront.net/variants/yTXD2dmWz1VJ58rghsSrYEbB/4aed37fcc100f790c678f8cec7ca67943f00985660416438ba69b43eec774d28?format=webp" alt="Motor Oil" />
+              </div>
+              <p class="part-name">Motor Oil</p>
+            </a>
+          </div>
+          <!-- Slide 8: Brake Pads -->
+          <div class="swiper-slide">
+            <a href="">
+              <div class="image-container">
+                <img src="https://ds31kih3xf8eg.cloudfront.net/variants/Er89xEBK5a4ALvPj9BmauEuD/4aed37fcc100f790c678f8cec7ca67943f00985660416438ba69b43eec774d28?format=webp" alt="Brake Pads" />
+              </div>
+              <p class="part-name">Brake Pads</p>
+            </a>
+          </div>
+          <!-- Slide 9: Wheel Hub -->
+          <div class="swiper-slide">
+            <a href="">
+              <div class="image-container">
+                <img src="https://ds31kih3xf8eg.cloudfront.net/variants/QwJnzBZxorJj7m8cNHpZTasV/4aed37fcc100f790c678f8cec7ca67943f00985660416438ba69b43eec774d28?format=webp" alt="Wheel Hub" />
+              </div>
+              <p class="part-name">Wheel Hub</p>
+            </a>
+          </div>
+          <!-- Slide 10: Coil Spring -->
+          <div class="swiper-slide">
+            <a href="">
+              <div class="image-container">
+                <img src="https://ds31kih3xf8eg.cloudfront.net/variants/3am7R1VmtjFhK6QvyPsbVqYY/4aed37fcc100f790c678f8cec7ca67943f00985660416438ba69b43eec774d28?format=webp" alt="Coil Spring" />
+              </div>
+              <p class="part-name">Coil Spring</p>
+            </a>
+          </div>
+        <!-- Continue adding slides... -->
+      </div>
+      
+      <!-- Navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <!-- Right side div -->
+    <div class="side-div"></div>
+  </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+</html>
